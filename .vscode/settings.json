@@ -1,0 +1,57 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true // 保存时自动eslint格式化
+  },
+  "editor.formatOnSave": true, // 保存时是否自动右击格式化
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.postcss": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "stylusSupremacy.insertColons": true, // 是否插入冒号
+  "stylusSupremacy.insertSemicolons": false, // 是否插入分好
+  "stylusSupremacy.insertBraces": false, // 是否插入大括号
+  "stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
+  "stylusSupremacy.insertNewLineAroundBlocks": false, // 两个选择器中是否换行
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.sass": "sass-formatter",
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.options.useTabs": false,
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      // vue文件html相关
+      "wrap_attributes": "force-aligned" // 以下为取值说明
+      // - auto: 仅在超出行长度时才对属性进行换行。
+      // - force: 对除第一个属性外的其他每个属性进行换行。
+      // - force-aligned: 对除第一个属性外的其他每个属性进行换行，并保持对齐。
+      // - force-expand-multiline: 对每个属性进行换行。
+      // - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
+    },
+    "prettyhtml": {
+      // vue文件html相关
+      "printWidth": 500, // 每行最大字符数，超出换行(会增加行数)
+      "singleQuote": true, // 是否使用单引号
+      "wrapAttributes": false, // 属性换行
+      "sortAttributes": false // 属性排序
+    },
+    "prettier": {
+      // vue文件js相关
+      "trailingComma": "none", // 禁止结束添加逗号
+      "semi": false, // 是否添加结束分号
+      "singleQuote": true // 是否使用单引号
+    }
+  },
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, // 让函数(名)和后面的括号之间加个空格
+  "javascript.implicitProjectConfig.experimentalDecorators": true
+}
