@@ -1,27 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navigator />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigator from './components/Navigator.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navigator
   }
 }
 </script>
 
 <style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+html
+  height: 100%
+  body
+    font-size: 0.75em
+    margin: 0
+    padding: 0
+    height: inherit
+    *
+      padding-inline-start: 0
+      margin-block-start: 0
+      margin-block-end: 0
+    p
+      margin: 0
+      padding: 2px 0 10px
+    #app
+      font-family: Avenir, Helvetica, Arial, sans-serif
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      text-align: center
+      color: #2c3e50
+      height: inherit
 </style>
