@@ -1,3 +1,11 @@
+# 自动将项目的字体大小转换成 rem
+
+"postcss-px2rem": "^0.3.0",
+
+# 浏览器前缀处理工具
+
+"autoprefixer": "^10.0.2",
+
 # js-beautify-html
 
 {

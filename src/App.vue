@@ -1,5 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app"
+       @dblclick="showDiv">
+    <div class="v-show-test"
+         v-show="show">v-show初始化就会挂载该节点，通过css display显隐；<br />v-if初始化不一定挂载节点，显隐会增加或者删除节点;</div>
     <Navigator />
   </div>
 </template>
@@ -9,8 +12,18 @@ import Navigator from './components/Navigator.vue'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      show: false
+    }
+  },
   components: {
     Navigator
+  },
+  methods: {
+    showDiv () {
+      this.show = !this.show
+    }
   }
 }
 </script>
@@ -37,4 +50,9 @@ html
       text-align: center
       color: #2c3e50
       height: inherit
+      .v-show-test
+        background: #eee
+        padding: 10px
+        line-height: 20px
+        text-align: left
 </style>

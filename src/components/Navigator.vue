@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import Box from './Box'
-import BFC from './BFC'
-import FontUnit from './FontUnit'
-import ReactiveLayout from './ReactiveLayout'
-import MediaQuery from './MediaQuery'
+import Box from '@/pages/Box'
+import BFC from '@/pages/BFC'
+import FontUnit from '@/pages/FontUnit'
+import ReactiveLayout from '@/pages/ReactiveLayout'
+import MediaQuery from '@/pages/MediaQuery'
 
 export default {
   name: 'Navigator',
